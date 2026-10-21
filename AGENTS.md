@@ -10,10 +10,6 @@ Stop and ask only when you can't continue without me, or before anything destruc
 - Commit messages are one-liners; extra context lives in the PR description. Reviewers read the one-liner GitHub shows and nothing beyond it, so anything longer is bookkeeping nobody reads.
 - Commit and push progress as you go, so cloud sessions start from current work rather than a stale branch.
 
-## Authorship
-
-Keep agent authorship out of commit messages and PR descriptions entirely — no `Co-Authored-By`, no equivalent note.
-
 ## Tests
 
 Prove your work (yes!), but don't commit the proof. Write whatever tests help you verify a change, run them, and delete them before committing. In your summary, say what you verified and how. 
