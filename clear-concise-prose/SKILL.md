@@ -5,67 +5,36 @@ description: Default skill for drafting or revising prose, including informal wr
 
 # Clear, Concise Prose
 
-## Overview
+Improve how ideas are expressed without reworking the argument behind them. The principles come from William Strunk Jr.'s _The Elements of Style_ (1918).
 
-Use this as the default clarity-and-concision skill for human-readable prose. It improves the expression of ideas without developing or materially restructuring the underlying argument.
+Before writing or editing, read `elements-of-style.md` (about 16,000 tokens) and apply the rules that fit. If context is tight, draft first, then give a subagent the draft and the reference for a clarity-and-concision pass.
 
-William Strunk Jr.'s _The Elements of Style_ (1918) provides the core writing principles.
+## Rules
 
-**WARNING:** `elements-of-style.md` consumes ~12,000 tokens. Read it only when writing or editing prose.
+Usage:
 
-## When to Use This Skill
-
-Use this skill when the task is to draft or revise human-readable prose and no more specialized skill clearly applies. Common cases include:
-
-- Informal emails, messages, and notes
-- Documentation, README files, technical explanations
-- Commit messages, pull request descriptions
-- Error messages, UI copy, help text, comments
-- Reports, summaries, or any explanation
-- Editing to improve clarity
-
-Treat this skill as the default fallback, not as a reason to stack it automatically with every specialized writing skill. If the user's primary task clearly calls for another skill, use that skill unless the user explicitly asks for both.
-
-## Limited Context Strategy
-
-When context is tight:
-
-1. Write your draft using judgment
-2. Dispatch a subagent with your draft and `elements-of-style.md`
-3. Have the subagent perform a clarity-and-concision pass and return the revision
-
-## All Rules
-
-### Elementary Rules of Usage (Grammar/Punctuation)
-
-1. Form possessive singular by adding 's
-2. Use comma after each term in series except last
+1. Form the possessive singular by adding 's
+2. In a series, put a comma after each term except the last
 3. Enclose parenthetic expressions between commas
-4. Comma before conjunction introducing co-ordinate clause
-5. Don't join independent clauses by comma
+4. Put a comma before a conjunction that introduces a co-ordinate clause
+5. Don't join independent clauses with a comma
 6. Don't break sentences in two
-7. Participial phrase at beginning refers to grammatical subject
+7. Make an opening participial phrase refer to the grammatical subject
 
-### Elementary Principles of Composition
+Composition:
 
 8. One paragraph per topic
-9. Begin paragraph with topic sentence
-10. **Use active voice**
+9. Begin each paragraph with a topic sentence
+10. **Use the active voice**
 11. **Put statements in positive form**
 12. **Use definite, specific, concrete language**
 13. **Omit needless words**
-14. Avoid succession of loose sentences
+14. Avoid a succession of loose sentences
 15. Express co-ordinate ideas in similar form
 16. **Keep related words together**
 17. Keep to one tense in summaries
-18. **Place emphatic words at end of sentence**
+18. **Place emphatic words at the end of the sentence**
 
-### Section V: Words and Expressions Commonly Misused
+Section V of the reference covers commonly misused words and expressions.
 
-Alphabetical reference for usage questions
-
-Prioritize the reference's durable composition principles. Treat dated lexical or usage prescriptions in the 1918 text as historical guidance rather than binding modern usage when they conflict with the user's requested register or contemporary clarity.
-
-## Bottom Line
-
-When this skill applies, read `elements-of-style.md` and apply the relevant rules. If context is limited, use the limited-context strategy above.
+The composition principles hold up; some 1918 word-level rulings don't. Where the text's verdicts on _shall_ and _will_, split infinitives, singular _they_, or _while_ conflict with modern usage or the requested register, follow modern usage.
