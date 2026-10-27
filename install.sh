@@ -1,6 +1,6 @@
 #!/bin/sh
 # Install AGENTS.md and every skill into ~/.agents, replacing same-named copies and leaving the rest. Safe to rerun.
-#   sh -c "$(curl -fsSL https://raw.githubusercontent.com/okbytes/skills/main/install.sh)"
+#   sh -c "$(curl -fsSL https://raw.githubusercontent.com/okbytes/agents/main/install.sh)"
 set -eu
 
 agents=$HOME/.agents
