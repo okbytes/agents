@@ -17,7 +17,7 @@ trap 'exit 1' HUP INT TERM
 if [ -f "$0" ] && [ -f "$(dirname "$0")/AGENTS.md" ]; then
   src=$(CDPATH= cd -P "$(dirname "$0")" && pwd)
 else
-  curl -fsSL https://github.com/okbytes/skills/archive/refs/heads/main.tar.gz -o "$tmp/skills.tar.gz"
+  curl -fsSL https://github.com/okbytes/agents/archive/refs/heads/main.tar.gz -o "$tmp/skills.tar.gz"
   tar -xzf "$tmp/skills.tar.gz" -C "$tmp"
   src=$tmp/skills-main
 fi
