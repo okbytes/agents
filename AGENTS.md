@@ -6,9 +6,7 @@ Stop and ask only when you can't continue without me, or before anything destruc
 
 - For reference, my github username is `okbytes` if it ever doesn't have my name, Brett, in some form.
 - Local repositories almost always live in `~/repos/`. I usually name them in chats by their folder name, like "<folder-name> repo".
-- GitHub CLI `gh` is installed and available!
-- Commit messages are one-liners; extra context lives in the PR description. Reviewers read the one-liner GitHub shows and nothing beyond it, so anything longer is bookkeeping nobody reads.
-- Commit and push progress as you go, so cloud sessions start from current work rather than a stale branch.
+- GitHub CLI `gh` is installed and available.
 
 ## Tests
 
@@ -18,6 +16,6 @@ Commit a new test only when:
 
 - I ask for one,
 - it's a regression test for a bug you're fixing and it failed before the fix, or
-- it guards behavior where a mistake would cause an incident that no type check, existing test, or QA step would catch. Name that incident in your summary so I can push back.
+- it guards behavior where a mistake would cause a problem that no type check, existing test, or QA step would catch. Name that problem in your summary so I can push back.
 
 Extend an existing test before adding a new file. Don't add test-only helpers, fixtures, or global setup to support a new test.
